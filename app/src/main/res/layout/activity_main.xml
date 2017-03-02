@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comsci.kengkung.myfirstapp.MainActivity"
+    android:background="@drawable/bg2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtitle"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="@dimen/h1"
+        android:id="@+id/textView" />
+
+    <Button
+        android:text="@string/Moreinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnMoreinfo"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnMoreinfo"
+        android:layout_below="@+id/textView"
+        android:id="@+id/livTraffic"
+        android:background="#beffffff"
+        android:layout_margin="@dimen/my_margin" />
+</RelativeLayout>
